@@ -171,14 +171,18 @@
         ajax.send(url, callback, 'POST', query.join('&'), async)
     };
 
-    setInterval(function () {
-      ajax.get('/api/stats', {}, function (body) {
-        var json = JSON.parse(body);
+    function updateStats()
+    {
+        ajax.get('/api/stats', {}, function (body) {
+            var json = JSON.parse(body);
 
-        document.getElementById("stats-players").innerHTML = json.players;
-        document.getElementById("stats-customers").innerHTML = json.customers;
-        document.getElementById("stats-sales").innerHTML = json.purchases;
-        document.getElementById("stats-servers").innerHTML = json.servers;
-      })
-    }, 5000)
+            document.getElementById("stats-players").innerHTML = json.players;
+            document.getElementById("stats-customers").innerHTML = json.customers;
+            document.getElementById("stats-sales").innerHTML = json.purchases;
+            document.getElementById("stats-servers").innerHTML = json.servers;
+        })
+    }
+
+    setInterval(updateStats, 5000)
+    updateStats();
 </script>
