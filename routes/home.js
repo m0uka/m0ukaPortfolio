@@ -58,6 +58,9 @@ router.get("/", async (req, res) => {
         addonsArr.push({title: name, description: addon.shortDescription, img: addon.bigSpotImage, link: addon.route, tags: tags});
     })
 
+    var stats = await Dashboard.GetUserStats(config.steamid);
+    stats = stats.data;
+
     res.render("home", {
         pathId: "/",
         
@@ -67,6 +70,11 @@ router.get("/", async (req, res) => {
         languages: languages,
         tech: technologies,
         projects: addonsArr,
+
+        sales: stats.purchases,
+        customers: stats.customers + "+",
+        servers: stats.servers,
+        players: stats.players
     });
 })
 

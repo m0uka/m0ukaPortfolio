@@ -16,6 +16,11 @@ function GetUserAddons(sid) {
     return performGetRequest(`user/${sid}/addons`);
 }
 
+function GetUserStats(sid) {
+    return performGetRequest(`user/${sid}/stats`);
+}
+
 Dashboard.GetUserAddons = GetUserAddons;
+Dashboard.GetUserStats = GetUserStats;
 
 module.exports = Dashboard;
