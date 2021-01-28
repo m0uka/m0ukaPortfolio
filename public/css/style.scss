@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+// Import a Google Font
+// Montserrat or Inter??
+// https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+// Update Bulma's global variables
+$family-sans-serif: "Rubik", sans-serif;
+
+@import "../../node_modules/bulma/bulma.sass";
+@import "portfolio.scss";

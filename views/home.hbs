@@ -1,0 +1,107 @@
+
+<body>
+    <section class="hero is-info is-medium">
+        <div class="hero-head">
+            {{> navbar}}
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <figure class="image is-128x128 is-inline-block">
+                            <img class="is-rounded" src="{{avatar}}">
+                        </figure>
+                    </div>
+                </div>
+
+                <p class="title is-1">
+                    m0uka
+                </p>
+                <p class="subtitle is-3">
+                    Freelance Developer
+                </p>
+
+                <div class="columns is-centered">
+                    <div class="column is-one-fifth">
+                        <div class="columns is-mobile">
+                            {{#each social}}
+                            <div class="column">
+                                <a href="{{path}}">
+                                    <span class="icon has-text-white">
+                                        {{#if isImage}}
+                                        <img src="{{icon}}">
+                                        {{else}}
+                                        <i class="fab {{icon}} fa-2x"></i>
+                                        {{/if}}
+                                    </span>
+                                </a>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container has-text-centered">
+            <h1 class="title">
+                About me
+            </h1>
+
+            <p>
+                {{{about}}}
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="section is-paddingless">
+
+        <div class="container has-text-centered">
+
+            <h1 class="title">
+                Skills
+            </h1>
+            <p class="subtitle">
+                How experienced am I?
+            </p>
+
+            <div class="columns is-centered has-text-left">
+                <div class="column is-one-third">
+                    {{> skills title="Languages" skills=this.languages}}
+                </div>
+
+                <div class="column is-one-third">
+                    {{> skills title="Technologies" skills=this.tech}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container has-text-centered">
+            <h1 class="title">
+                Projects
+            </h1>
+
+            <p class="subtitle">
+                My projects/products.
+            </p>
+
+            <div class="columns is-multiline">
+                {{#each projects}}
+                <div class="column is-one-third">
+                    {{> projectcard}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+    </section>
+
+</body>
