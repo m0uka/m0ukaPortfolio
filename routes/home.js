@@ -78,4 +78,11 @@ router.get("/", async (req, res) => {
     });
 })
 
+router.get("/api/stats", async (req, res) => {
+    var stats = await Dashboard.GetUserStats(config.steamid);
+    stats = stats.data;
+
+    res.send(JSON.stringify(stats));
+})
+
 module.exports = router;
