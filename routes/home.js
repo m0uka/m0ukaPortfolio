@@ -72,7 +72,7 @@ router.get("/", async (req, res) => {
         projects: addonsArr,
 
         sales: stats.purchases,
-        customers: stats.customers + "+",
+        customers: stats.customers,
         servers: stats.servers,
         players: stats.players
     });
