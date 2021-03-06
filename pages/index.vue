@@ -2,6 +2,7 @@
   <div>
     <Header />
     <Stats />
+    <Footer />
   </div>
 </template>
 
