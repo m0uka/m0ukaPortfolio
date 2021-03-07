@@ -2,6 +2,7 @@
   <div>
     <Header />
     <Stats />
+    <Projects />
     <Testimonials />
     <Footer />
   </div>

@@ -10,6 +10,9 @@
             <p class="text-gray-400 font-medium pt-4 pb-6">
                 My name is Lukas, and I am a freelance developer and an aspiring entrepreneur from the Czech Republic.
                 I originally started programming with a Minecraft mod called ComputerCraft.
+                <br>
+                <br>
+                I have experience with Lua, C#, JavaScript, Vue, SQL and PHP.
             </p>
         </div>
 

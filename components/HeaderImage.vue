@@ -1,3 +1,3 @@
 <template>
-  <img class="object-contain justify-end shadow" src="~/assets/svgs/developer.svg">
+  <img class="mx-auto shadow my-auto" src="~/assets/svgs/developer.svg">
 </template>
