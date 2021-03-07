@@ -3,7 +3,7 @@
     <div class="container mx-auto my-auto h-auto px-8 2xl:px-10">
         <div class="text-center mt-14 mb-4 md:my-14">
             <h2 class="text-gray-100 font-extrabold text-4xl">Trusted by a lot of people</h2>
-            <h3 class="mt-2 text-gray-300 font-normal text-xl text-opacity-50 tracking-wide">My products are used and trusted by a lot of people.</h3>
+            <h3 class="mt-2 text-gray-300 font-normal text-xl text-opacity-50 tracking-wide">My products are used and trusted by a lot of people. Updated in realtime.</h3>
         </div>
         <div class="flex flex-wrap flex-col md:flex-row pb-16">
             <div class="flex-grow text-center mt-5 md:mt-0">
@@ -54,7 +54,7 @@ export default {
   mounted () {
     window.setInterval(() => {
       this.$fetch()
-    }, 4000)
+    }, 3000)
   },
   async fetch () {
     const data = await fetch('http://localhost:5000/api/user/portfoliostats').then(res => res.json())
