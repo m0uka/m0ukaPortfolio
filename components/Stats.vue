@@ -1,28 +1,67 @@
 <template>
     <div class="bg-gradient-to-br from-blue-500 to-blue-800 h-full flex">
     <div class="container mx-auto my-auto h-auto px-8 2xl:px-10">
-        <div class="text-center my-14">
+        <div class="text-center mt-14 mb-4 md:my-14">
             <h2 class="text-gray-100 font-extrabold text-4xl">Trusted by a lot of people</h2>
-            <h3 class="mt-2 text-gray-300 font-normal text-xl text-opacity-50 tracking-wide">My products are trusted by a lot of people, blah blah blah</h3>
+            <h3 class="mt-2 text-gray-300 font-normal text-xl text-opacity-50 tracking-wide">My products are used and trusted by a lot of people.</h3>
         </div>
-        <div class="flex flex-wrap pb-16">
-            <div class="flex-grow text-center">
-                <p class="text-white text-6xl font-bold tracking-wide tabular-nums">500</p>
-                <p class="text-white text-xl font-normal text-opacity-60 mt-1">Sales</p>
+        <div class="flex flex-wrap flex-col md:flex-row pb-16">
+            <div class="flex-grow text-center mt-5 md:mt-0">
+                <client-only>
+                  <Roller class="text-white text-6xl font-bold tracking-wide tabular-nums text-center" :text="sales" />
+                </client-only>
+                <p class="text-white text-xl font-normal text-opacity-60">Sales</p>
             </div>
-            <div class="flex-grow text-center">
-                <p class="text-white text-6xl font-bold tracking-wide tabular-nums">500</p>
-                <p class="text-white text-xl font-normal text-opacity-60 mt-1">Customers</p>
+            <div class="flex-grow text-center mt-5 md:mt-0">
+                <client-only>
+                  <Roller class=" text-white text-6xl font-bold tracking-wide tabular-nums" :text="customers" />
+                </client-only>
+                <p class="text-white text-xl font-normal text-opacity-60">Customers</p>
             </div>
-            <div class="flex-grow text-center">
-                <p class="text-white text-6xl font-bold tracking-wide tabular-nums">500</p>
-                <p class="text-white text-xl font-normal text-opacity-60 mt-1">Servers</p>
+            <div class="flex-grow text-center mt-5 md:mt-0">
+                <client-only>
+                  <Roller class=" text-white text-6xl font-bold tracking-wide tabular-nums" :text="servers" />
+                </client-only>
+                <p class="text-white text-xl font-normal text-opacity-60">Servers</p>
             </div>
-            <div class="flex-grow text-center">
-                <p class="text-white text-6xl font-bold tracking-wide tabular-nums">50000</p>
-                <p class="text-white text-xl font-normal text-opacity-60 mt-1">Players online</p>
+            <div class="flex-grow text-center mt-5 md:mt-0">
+                <client-only>
+                  <Roller class=" text-white text-6xl font-bold tracking-wide tabular-nums" :text="players" />
+                </client-only>
+                <p class="text-white text-xl font-normal text-opacity-60">Players online</p>
             </div>
         </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+  .roller {
+    margin: auto;
+  }
+</style>
+
+<script>
+export default {
+  data () {
+    return {
+      sales: 0,
+      customers: 0,
+      servers: 0,
+      players: 0
+    }
+  },
+  mounted () {
+    window.setInterval(() => {
+      this.$fetch()
+    }, 4000)
+  },
+  async fetch () {
+    const data = await fetch('http://localhost:5000/api/user/portfoliostats').then(res => res.json())
+    this.sales = data.purchases.toString()
+    this.customers = data.customers.toString()
+    this.servers = data.servers.toString()
+    this.players = data.players.toString()
+  }
+}
+</script>
