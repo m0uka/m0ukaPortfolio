@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,MAAM,EAAE,IAAI;CACf;;AAED,AAAA,aAAa,CAAC,aAAa,CAAC;EACxB,IAAI,EAAE,IAAI;CACb;;AAED,AAAA,aAAa,CAAC;EACV,WAAW,EAAE,IAAI;CACpB",
-    "sources": [
-        "portfolio.scss"
-    ],
-    "names": [],
-    "file": "portfolio.css"
-}
