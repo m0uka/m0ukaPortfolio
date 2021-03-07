@@ -57,7 +57,7 @@ export default {
     }, 3000)
   },
   async fetch () {
-    const data = await fetch('http://localhost:5000/api/user/portfoliostats').then(res => res.json())
+    const data = await fetch('https://voidstudios.dev/api/user/portfoliostats').then(res => res.json())
     this.sales = data.purchases.toString()
     this.customers = data.customers.toString()
     this.servers = data.servers.toString()
