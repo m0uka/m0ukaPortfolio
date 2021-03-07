@@ -22,6 +22,10 @@ export default {
   css: [
   ],
 
+  server: {
+    port: 5551
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/roller.client.js'
