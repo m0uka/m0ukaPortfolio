@@ -2,6 +2,7 @@
   <div>
     <Header />
     <Stats />
+    <Testimonials />
     <Footer />
   </div>
 </template>

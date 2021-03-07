@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-gradient-to-br from-blue-500 to-blue-800 h-full flex">
+    <div class="bg-gradient-to-br from-blue-500 to-blue-800 h-full flex">
     <div class="container mx-auto my-auto h-auto px-8 2xl:px-10">
         <div class="text-center my-14">
             <h2 class="text-gray-100 font-extrabold text-4xl">Trusted by a lot of people</h2>
@@ -24,5 +24,5 @@
             </div>
         </div>
     </div>
-  </header>
+  </div>
 </template>
