@@ -1,30 +1,40 @@
 {
-  "name": "m0ukaportfolio",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "compile-styles": "node-sass public/css/style.scss public/css/style.css"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/m0uka/m0ukaPortfolio.git"
-  },
-  "author": "m0uka",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/m0uka/m0ukaPortfolio/issues"
-  },
-  "homepage": "https://github.com/m0uka/m0ukaPortfolio#readme",
   "dependencies": {
-    "axios": "^0.19.2",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "express-handlebars": "^4.0.4",
-    "steam-web": "^0.7.0"
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/fontawesome": "^1.1.2",
+    "core-js": "^3.8.3",
+    "jquery": "^3.6.0",
+    "nuxt": "^2.14.12",
+    "odometer": "^0.4.8",
+    "tippy.js": "^6.3.1",
+    "vue-odometer": "^1.0.2",
+    "vue-roller": "^1.12.4",
+    "vue-tippy": "^6.0.0-alpha.25"
   },
   "devDependencies": {
-    "bulma": "^0.8.2",
-    "node-sass": "^4.14.1"
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "autoprefixer": "^9.8.6",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.18.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-vue": "^7.5.0",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
   }
 }
