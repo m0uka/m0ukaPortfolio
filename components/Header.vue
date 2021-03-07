@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-gray-900 h-screen flex">
+  <header class="bg-gray-900 h-screen flex -mb-10">
     <div class="container mx-auto my-auto h-auto px-8 2xl:px-10">
         <div class="flex flex-wrap pb-16">
           <ProfileInfo />
