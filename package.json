@@ -18,11 +18,7 @@
     "core-js": "^3.8.3",
     "jquery": "^3.6.0",
     "nuxt": "^2.14.12",
-    "odometer": "^0.4.8",
-    "tippy.js": "^6.3.1",
-    "vue-odometer": "^1.0.2",
-    "vue-roller": "^1.12.4",
-    "vue-tippy": "^6.0.0-alpha.25"
+    "vue-roller": "^1.12.4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
