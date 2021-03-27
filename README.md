@@ -1,4 +1,10 @@
-# portfolio
+## m0ukaPortfolio
+
+This is my portfolio I made with NuxtJS and Tailwind. Pretty satisfied with the final result.
+It uses VoidStudios.dev API in order to fetch the live stats, and updates every X seconds.
+The content is rendered server-side (it uses SSR)
+
+Live preview: [m0uka.dev](https://m0uka.dev)
 
 ## Build Setup
 
