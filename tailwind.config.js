@@ -13,10 +13,10 @@ module.exports = {
     },
     extend: {
       lineHeight: {
-        '12': '3rem'
+        12: '3rem'
       }
     }
   },
   variants: {},
-  plugins: [],
+  plugins: []
 }
