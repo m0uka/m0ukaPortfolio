@@ -1,14 +1,14 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'portfolio',
+    title: 'm0uka.dev',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Official portfolio of m0uka.' },
       { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' },
 
       { rel: 'stylesheet', href: 'https://raw.githubusercontent.com/HubSpot/odometer/master/themes/odometer-theme-minimal.css' },
@@ -21,6 +21,10 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
+
+  server: {
+    port: 5551
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
