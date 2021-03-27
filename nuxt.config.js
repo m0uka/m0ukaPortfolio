@@ -11,11 +11,11 @@ export default {
       { hid: 'description', name: 'description', content: 'Official portfolio of m0uka.' },
       { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' },
 
-      { rel: 'stylesheet', href: 'https://raw.githubusercontent.com/HubSpot/odometer/master/themes/odometer-theme-minimal.css' },
+      { rel: 'stylesheet', href: 'https://raw.githubusercontent.com/HubSpot/odometer/master/themes/odometer-theme-minimal.css' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
