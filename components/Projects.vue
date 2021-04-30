@@ -27,32 +27,38 @@ export default {
         {
           name: 'VoidCases',
           avatar: 'https://media.gmodstore.com/_/script_banners/81b857ca71c29a21a4a446898d341a02.png',
-          description: 'VoidCases is a modern and fully customizable unboxing system which fits for every gamemode. It features a trading system, marketplace, high quality models with sexy animations, in-game config, and support for a lot of addons.',
+          description: 'VoidCases is a modern and fully customizable unboxing system for Garry\'s Mod. It features a trading system, marketplace, high quality models with sexy animations, in-game config, and support for a lot of addons.',
           link: 'https://www.gmodstore.com/market/view/voidcases-unboxing-system'
         },
         {
           name: 'VoidFactions',
           avatar: 'https://media.gmodstore.com/_/script_banners/7c64ab16ec7da028701f7271cc1a5dcd.png',
-          description: 'VoidFactions is the perfect solution for grouping players into factions. It is a great choice both for Serious and Non-Serious RP servers. Everything is customizable, optimized, and configurable through an in-game config panel.',
+          description: 'VoidFactions is an advanced group system for Garry\'s Mod. It is a great choice both for Serious and Non-Serious RP servers. Everything is customizable, optimized, and configurable through an in-game config panel.',
           link: 'https://www.gmodstore.com/market/view/voidfactions'
+        },
+        {
+          name: 'PolyRacing',
+          avatar: 'https://play-lh.googleusercontent.com/qqkGaMcnfli9EFIOiL_I_piJdmjw8YxTGDAiVOegPk45gtP1466RQ8Wk-gqdJafgIM0=w2560-h1297-rw',
+          description: 'PolyRacing is a mobile low-poly racing game made in Unity. It features a fully fledged intelligent AI, arcade-ish vehicle handling, and a fancy low-poly atmosphere.',
+          link: 'https://play.google.com/store/apps/details?id=com.ParadiseStudios.PolyRacing'
+        },
+        {
+          name: 'VoidStudios.dev',
+          avatar: 'https://m0uka.dev/u/DsXrta.png',
+          description: 'VoidStudios.dev is a web app made with ASP.NET Core. It uses the gmodstore API to fetch data and uses MariaDB to store user data. It features a support system and an admin dashboard.',
+          link: 'https://voidstudios.dev'
         },
         {
           name: 'VoidChar',
           avatar: 'https://media.gmodstore.com/_/script_banners/b20144779b81ede1ba8f833672f6163d.png',
-          description: 'Ever wanted to play multiple characters on your roleplay server? Then VoidCharacter is just right for you!',
+          description: 'VoidChar is an advanced character system for Garry\'s Mod. It is perfect for roleplaying servers.',
           link: 'https://www.gmodstore.com/market/view/voidchar-character-system-1'
         },
         {
           name: 'mTokens',
           avatar: 'https://media.gmodstore.com/_/script_banners/2eb761970100456a460d293137f1dadb.png',
-          description: 'mTokens is a unique system, which allows players to farm tokens and buy items with them in the in-game store.',
+          description: 'mTokens is an addon for Garry\'s Mod, which allows players to farm tokens and buy items with them in an in-game store.',
           link: 'https://www.gmodstore.com/market/view/mtokens'
-        },
-        {
-          name: 'VoidStudios.dev',
-          avatar: 'https://m0uka.dev/u/DsXrta.png',
-          description: 'VoidStudios.dev is a web app made with ASP.NET Core. It uses the gmodstore API to fetch data and uses MariaDB to store user data.',
-          link: 'https://voidstudios.dev'
         }
       ]
     }
