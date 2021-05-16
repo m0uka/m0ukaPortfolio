@@ -15,6 +15,7 @@
                 :class="!hovered || !gif ? 'visible' : 'invisible'"
                 :ref="'project-image-' + name"
                 :id="'project-image-' + name"
+                @load="handleLoad"
                 :src="avatar">
             </div>
             <div class="bg-gray-100 p-5 cardbg">
@@ -28,10 +29,10 @@
 
 <script>
 export default {
-  mounted () {
-    const imageHeight = this.$refs['project-image-' + this.name].clientHeight + 'px'
-
-    this.gifHeight = imageHeight
+  methods: {
+    handleLoad (event) {
+      this.gifHeight = event.target.clientHeight + 'px'
+    }
   },
   data () {
     return {
