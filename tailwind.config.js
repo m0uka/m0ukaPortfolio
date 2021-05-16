@@ -17,6 +17,10 @@ module.exports = {
       }
     }
   },
-  variants: {},
+  variants: {
+    extend: {
+      visibility: ['hover']
+    }
+  },
   plugins: []
 }

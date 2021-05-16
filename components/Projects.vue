@@ -3,7 +3,7 @@
         <div class="container mx-auto my-auto h-auto px-8 2xl:px-10">
             <div class="text-center mt-14 mb-7 relative">
                 <h2 class="text-gray-100 font-extrabold text-4xl">My Projects</h2>
-                <h3 class="mt-2 text-gray-300 font-normal text-xl text-opacity-50 tracking-wide">Some of my high-quality work.</h3>
+                <h3 class="mt-2 text-gray-300 font-normal text-xl text-opacity-50 tracking-wide">Some of my high-quality work. Hover to see more.</h3>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14 w-9/12 mx-auto">
@@ -11,6 +11,8 @@
                 v-for="project in projects"
                 :key="project.name"
                 :name="project.name"
+                :gif="project.gif"
+                :gifHeight="project.gifHeight"
                 :avatar="project.avatar"
                 :link="project.link"
                 :description="project.description" />
@@ -27,36 +29,42 @@ export default {
         {
           name: 'VoidCases',
           avatar: 'https://media.gmodstore.com/_/script_banners/81b857ca71c29a21a4a446898d341a02.png',
+          gif: 'http://i.imgur.com/viabYM3.gif',
           description: 'VoidCases is a modern and fully customizable unboxing system for Garry\'s Mod. It features a trading system, marketplace, high quality models with sexy animations, in-game config, and support for a lot of addons.',
           link: 'https://www.gmodstore.com/market/view/voidcases-unboxing-system'
         },
         {
           name: 'VoidFactions',
           avatar: 'https://media.gmodstore.com/_/script_banners/7c64ab16ec7da028701f7271cc1a5dcd.png',
+          gif: 'https://media.giphy.com/media/eo1AKnReMxYNc9d43y/giphy.gif',
           description: 'VoidFactions is an advanced group system for Garry\'s Mod. It is a great choice both for Serious and Non-Serious RP servers. Everything is customizable, optimized, and configurable through an in-game config panel.',
           link: 'https://www.gmodstore.com/market/view/voidfactions'
         },
         {
           name: 'PolyRacing',
           avatar: 'https://play-lh.googleusercontent.com/qqkGaMcnfli9EFIOiL_I_piJdmjw8YxTGDAiVOegPk45gtP1466RQ8Wk-gqdJafgIM0=w2560-h1297-rw',
+          gif: 'https://media0.giphy.com/media/yMSOAikie9zdGaCAeu/giphy.gif',
           description: 'PolyRacing is a mobile low-poly racing game made in Unity. It features a fully fledged intelligent AI, arcade-ish vehicle handling, and a fancy low-poly atmosphere.',
           link: 'https://play.google.com/store/apps/details?id=com.ParadiseStudios.PolyRacing'
         },
         {
           name: 'VoidStudios.dev',
           avatar: 'https://m0uka.dev/u/DsXrta.png',
+          gif: 'https://m0uka.dev/u/zh51Ts.gif',
           description: 'VoidStudios.dev is a web app made with ASP.NET Core. It uses the gmodstore API to fetch data and uses MariaDB to store user data. It features a support system and an admin dashboard.',
           link: 'https://voidstudios.dev'
         },
         {
           name: 'VoidChar',
           avatar: 'https://media.gmodstore.com/_/script_banners/b20144779b81ede1ba8f833672f6163d.png',
-          description: 'VoidChar is an advanced character system for Garry\'s Mod. It is perfect for roleplaying servers.',
+          gif: 'https://media.giphy.com/media/kXRfeeuzAiYYFYwgsJ/giphy.gif',
+          description: 'VoidChar is an advanced character system for Garry\'s Mod. It is perfect for serious roleplay servers.',
           link: 'https://www.gmodstore.com/market/view/voidchar-character-system-1'
         },
         {
           name: 'mTokens',
-          avatar: 'https://media.gmodstore.com/_/script_banners/2eb761970100456a460d293137f1dadb.png',
+          avatar: 'https://steamuserimages-a.akamaihd.net/ugc/785248012423303574/B3E0BA86DDA0AE0D3E92E7B42D0D5A5F628DB4A4/',
+          gif: 'https://media.giphy.com/media/B5SH3JhtctNqsuZggd/giphy.gif',
           description: 'mTokens is an addon for Garry\'s Mod, which allows players to farm tokens and buy items with them in an in-game store.',
           link: 'https://www.gmodstore.com/market/view/mtokens'
         }
