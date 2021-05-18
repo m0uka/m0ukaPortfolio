@@ -7,12 +7,13 @@
         <div class="shadow-md transform transition duration-300 hover:scale-105">
             <div class="image-bg">
                 <img
-                class="absolute w-full object-cover align-middle"
-                :class="[hovered && gif ? 'visible' : 'invisible']"
+                class="absolute w-full object-cover align-middle transition-opacity duration-300"
+                :class="[hovered && gif ? 'opacity-100' : 'opacity-0']"
                 :style="{ 'max-height': gifHeight }"
                 :src="gif">
                 <img
-                :class="!hovered || !gif ? 'visible' : 'invisible'"
+                class="transition-opacity duration-300"
+                :class="!hovered || !gif ? 'opacity-100' : 'opacity-0'"
                 :ref="'project-image-' + name"
                 :id="'project-image-' + name"
                 @load="handleLoad"
