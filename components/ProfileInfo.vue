@@ -1,7 +1,7 @@
 <template>
     <div class="h-full 2xl:max-w-3xl xl:max-w-2xl">
         <h1 class="text-gray-100 leading-8 pt-4">
-            <span class="text-3xl tracking-normal">Hello there, I am</span>
+            <span class="text-3xl tracking-normal">Hello, I am</span>
             <span class="text-7xl font-extrabold sm:pl-0 md:pl-2">m0uka,</span><br>
             <span class="text-4xl font-medium text-blue-700 tracking-wide">a freelance developer</span><br>
         </h1>

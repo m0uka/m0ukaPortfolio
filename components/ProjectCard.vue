@@ -14,7 +14,6 @@
                 <img
                 class="transition-opacity duration-300"
                 :class="!hovered || !gif ? 'opacity-100' : 'opacity-0'"
-                :ref="'project-image-' + name"
                 :id="'project-image-' + name"
                 @load="handleLoad"
                 :src="avatar">
