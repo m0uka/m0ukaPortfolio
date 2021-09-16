@@ -14,9 +14,9 @@
             </div>
             <div class="flex-grow text-center mt-5 md:mt-0">
                 <client-only>
-                  <Roller class=" text-white text-6xl font-bold tracking-wide tabular-nums" :text="customers" />
+                  <Roller :isNumberFormat="true" class=" text-white text-6xl font-bold tracking-wide tabular-nums" :text="experienced" />
                 </client-only>
-                <p class="text-white text-xl font-normal text-opacity-60">Customers</p>
+                <p class="text-white text-xl font-normal text-opacity-60">Lifetime workshop subscriptions</p>
             </div>
             <div class="flex-grow text-center mt-5 md:mt-0">
                 <client-only>
@@ -46,7 +46,7 @@ export default {
   data () {
     return {
       sales: 0,
-      customers: 0,
+      experienced: 0,
       servers: 0,
       players: 0
     }
@@ -59,9 +59,11 @@ export default {
   async fetch () {
     const data = await fetch('https://voidstudios.dev/api/user/portfoliostats').then(res => res.json())
     this.sales = data.purchases.toString()
-    this.customers = data.customers.toString()
     this.servers = data.servers.toString()
     this.players = data.players.toString()
+
+    const workshop = await fetch('https://m0uka.dev/workshopstats').then(res => res.text())
+    this.experienced = workshop
   }
 }
 </script>

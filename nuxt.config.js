@@ -24,6 +24,10 @@ export default {
     port: 5551
   },
 
+  serverMiddleware: [
+    '~/serverMiddleware/workshop'
+  ],
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/roller.client.js'
