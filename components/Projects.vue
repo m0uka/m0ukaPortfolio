@@ -50,8 +50,8 @@ export default {
         {
           name: 'VoidStudios.dev',
           avatar: 'https://m0uka.dev/u/DsXrta.png',
-          gif: 'https://m0uka.dev/u/zh51Ts.webp',
-          description: 'VoidStudios.dev is a web app made with ASP.NET Core. It uses the gmodstore API to fetch data and uses MariaDB to store user data. It features a support system and an admin dashboard.',
+          gif: 'https://m0uka.dev/u/voidstudios.webm',
+          description: 'VoidStudios.dev is a web app made with ASP.NET Core. It uses the gmodstore API to fetch data and MariaDB to store user data. It features a support system and an admin dashboard.',
           link: 'https://voidstudios.dev'
         },
         {
