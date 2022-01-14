@@ -33,7 +33,7 @@
         </div>
       </nav>
       <p class="mt-8 text-center text-base text-gray-400">
-        &copy; 2021 m0uka.dev. All rights reserved.
+        &copy; 2022 m0uka.dev. All rights reserved.
       </p>
     </div>
   </footer>
