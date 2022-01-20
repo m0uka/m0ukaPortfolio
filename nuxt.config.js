@@ -2,7 +2,6 @@ import { defineNuxtConfig } from '@nuxt/bridge'
 
 export default defineNuxtConfig({
   // Global page headers: https://go.nuxtjs.dev/config-head
-  bridge: false,
   head: {
     title: 'm0uka.dev',
     htmlAttrs: {
@@ -19,6 +18,8 @@ export default defineNuxtConfig({
     ]
   },
 
+  nitro: true,
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
@@ -26,10 +27,6 @@ export default defineNuxtConfig({
   server: {
     port: 5551
   },
-
-  serverMiddleware: [
-    '~/serverMiddleware/workshop'
-  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [

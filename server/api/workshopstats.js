@@ -1,6 +1,6 @@
 const trackedItems = [ "2078529432", "1983122259", "1889557918", "1796629292", "1939959258" ]
 import axios from 'axios'
-const FormData = require('form-data')
+import FormData from 'form-data'
 
 let cachedData = {}
 
@@ -30,14 +30,11 @@ function fetchWorkshopData() {
 setInterval(fetchWorkshopData, 1000 * 60 * 5)
 fetchWorkshopData()
 
-export default {
-    path: '/workshopstats',
-    handler(req, res) {
-        let data = 0
-        cachedData.forEach( (x) => {
-            data += x.lifetime_subscriptions
-        } )
+export default (req, res) => {
+    let data = 0
+    cachedData.forEach( (x) => {
+        data += x.lifetime_subscriptions
+    } )
 
-        res.end(data.toString())
-    }
+    res.end(data.toString())
 }

@@ -69,7 +69,7 @@ export default {
     this.servers = data.servers.toString()
     this.players = data.players.toString()
 
-    const workshop = await fetch('https://m0uka.dev/workshopstats').then(res => res.text())
+    const workshop = await fetch('https://m0uka.dev/api/workshopstats').then(res => res.text())
     this.experienced = workshop
   },
   mounted () {
