@@ -1,5 +1,8 @@
-export default {
+import { defineNuxtConfig } from '@nuxt/bridge'
+
+export default defineNuxtConfig({
   // Global page headers: https://go.nuxtjs.dev/config-head
+  bridge: false,
   head: {
     title: 'm0uka.dev',
     htmlAttrs: {
@@ -66,4 +69,4 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
-}
+})
