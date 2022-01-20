@@ -14,7 +14,7 @@
             <a href="https://discord.com/users/299170508623314967" class="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-blue-600 hover:bg-indigo-50">Contact me</a>
           </div>
         </div>
-        <div class="m-12 flex">
+        <div class="m-12 flex hidden md:block">
           <img class="rounded-md" src="~/assets/svgs/contact.svg" alt="Contact me image">
         </div>
       </div>

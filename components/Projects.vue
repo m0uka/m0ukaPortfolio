@@ -1,9 +1,9 @@
 <template>
     <div class="bg-gray-900 flex project">
-        <div class="container mx-auto my-auto h-auto px-8 2xl:px-10">
+        <div class="container mx-auto my-auto h-auto md:px-8 2xl:px-10">
             <div class="text-center mt-14 mb-7 relative">
                 <h2 class="text-gray-100 font-extrabold text-4xl">My Projects</h2>
-                <h3 class="mt-2 text-gray-300 font-normal text-xl text-opacity-50 tracking-wide">Some of my high-quality work. Hover to see more.</h3>
+                <h3 class="mt-2 text-gray-300 font-normal text-xl text-opacity-50 tracking-wide">Some of my high-quality work. <span class="hidden md:inline">Hover to see more.</span></h3>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14 w-9/12 mx-auto">
