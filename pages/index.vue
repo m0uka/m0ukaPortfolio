@@ -3,9 +3,6 @@
     <Header />
     <Stats />
     <Projects />
-    <Testimonials />
-    <CallToAction />
-    <Footer />
   </div>
 </template>
 

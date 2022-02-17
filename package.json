@@ -13,6 +13,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@nuxt/builder": "^2.15.8",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/fontawesome": "^1.1.2",
     "core-js": "^3.8.3",
@@ -32,6 +33,9 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.5.0",
     "postcss": "^7.0.32",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.14"
+    "sass": "^1.49.7",
+    "sass-loader": "^10.2.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.14",
+    "webpack": "^4.0.0"
   }
 }
